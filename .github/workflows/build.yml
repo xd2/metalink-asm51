@@ -17,8 +17,6 @@ jobs:
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
-        env:
-          - tag: xxd3v/metalink-asm51:latest
         with:
           push: true
-          tags: $tag
+          tags: xxd3v/metalink-asm51:${{ env.GITHUB_SHA }}
