@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: xxd3v/metalink-asm51:${GITHUB_SHA}
+          tags: xxd3v/metalink-asm51:latest
