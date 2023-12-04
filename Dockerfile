@@ -1,5 +1,5 @@
 # Start from an arm64 version of Ubuntu
-FROM FROM debian:bullseye-slim
+FROM debian:bullseye-slim
 
 # Install DOSBox and other necessary packages
 RUN apt-get update && apt-get install -y dosbox
