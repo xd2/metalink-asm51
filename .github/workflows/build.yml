@@ -20,3 +20,12 @@ jobs:
         with:
           push: true
           tags: xxd3v/metalink-asm51:latest
+  test:
+    needs: build-and-push
+    runs-on: xxd3v/metalink-asm51
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Run asm51 assembler
+        run: asm51 passing.asm failing.asm
