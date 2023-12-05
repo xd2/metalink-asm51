@@ -1,2 +1,2 @@
 FROM xxd3v/metalink-asm51
-CMD ["asm51"]
+ENTRYPOINT ["asm51"]
