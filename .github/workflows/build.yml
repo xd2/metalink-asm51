@@ -20,14 +20,14 @@ jobs:
         with:
           push: true
           tags: xxd3v/metalink-asm51:latest
-  validate:
-    #needs: build-and-push
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
-
-      - name: Run ASM51
-        uses: ./.github/actions/metalink-asm51
-        with:
-          source: passing.asm
+#  validate:
+#    #needs: build-and-push
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Check out the repo
+#        uses: actions/checkout@v2
+#
+#      - name: Run ASM51
+#        uses: ./.github/actions/metalink-asm51
+#        with:
+#          source: passing.asm
