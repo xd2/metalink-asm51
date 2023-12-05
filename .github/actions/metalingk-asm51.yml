@@ -1,0 +1,12 @@
+name: 'Metalink ASM51 Action'
+description: 'Run Metalink ASM51 Assembler'
+inputs:
+  source:
+    description: 'Source file to assemble'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'docker://xxd3v/metalink-asm51'
+  args:
+    - ${{ inputs.source }}
