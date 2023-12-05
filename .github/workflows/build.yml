@@ -21,7 +21,7 @@ jobs:
           push: true
           tags: xxd3v/metalink-asm51:latest
   validate:
-    needs: build-and-push
+    #needs: build-and-push
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
