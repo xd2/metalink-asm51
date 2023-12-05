@@ -28,6 +28,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run ASM51
-        uses: ./.github/actions/metalink-asm51-action
+        uses: ./.github/actions/metalink-asm51
         with:
           source: passing.asm
